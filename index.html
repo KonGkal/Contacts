@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contacts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair        +Display:wght@400;700&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contacts</h1>
+    </header>
+    <main class="container">
+      <form id="clicker">
+        <section>
+          <h2>Create a contact!</h2>
+          <div>
+            <input type="text" class="field" id="name" placeholder="Name" pattern="[a-zA-Z]{2,15}" title="Your name must consist only of letters and be at least 2 letters long." required>
+            <input type="text" class="field" id="surname" placeholder="Surname" pattern="[a-zA-Z]{2,15}" title="Your surname must consist only of letters and be at least 2 letters long." required>
+            <input type="text" class="field" id="number" pattern="[0-9].{7,}" placeholder="Phone Number"  title="Your phone number must be at least 8 digits long." required>
+          </div>
+          <div>
+            <input type="text" class="field address" id="address" placeholder="Address" required> 
+          </div>
+          <div>
+            <button type="submit" class="button">Create</button>
+          </div>
+        </section>
+      </form>
+      <section>
+        <h2>Contacts</h2>
+        <div>
+          <p id="row" class="contacts-p"></p>
+        </div>
+      </section>
+      <form id="search">
+        <section>
+          <h2>Search your Contacts!</h2>
+          <div>
+            <input type="text" class="field" id="sname" placeholder="Name" pattern="[a-zA-Z]{2,15}" title="Your name must consist only of letters and be at least 2 letters long." required>
+            <input type="text" class="field" id="ssur" placeholder="Surname" pattern="[a-zA-Z]{2,15}" title="Your surname must consist only of letters and be at least 2 letters long." required>
+          </div>
+          <div>
+            <button type="submit" class="button">Search</button>
+          </div>
+          <div>
+            <p id="search-results"></p>
+          </div>
+        </section>
+      </form>
+      <form id="delete">
+        <section>
+          <h2>Delete a Contact!</h2>
+          <div>
+            <input type="text" class="field" id="dname" placeholder="Name" pattern="[a-zA-Z]{2,15}" title="Your name must consist only of letters and be at least 2 letters long." required>
+            <input type="text" class="field" id="dsur" placeholder="Surname" pattern="[a-zA-Z]{2,15}" title="Your surname must consist only of letters and be at least 2 letters long." required>
+          </div>
+          <div>
+            <button type="submit" class="button">Delete</button>
+          </div> 
+          <div>
+            <p id="delete-results"></p>
+          </div>
+        </section>
+      </form>
+    </main>
+    <footer>
+      <p>Made by KonGkal as a coding assignment for <em>BootCamp</em> admission process.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

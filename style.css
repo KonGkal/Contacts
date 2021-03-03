@@ -1,0 +1,116 @@
+body {
+  text-align: center;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/15/Address_book_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px 0px;
+}
+
+main {
+  border: 2px solid black;
+  border-radius: 60px;
+  background-color: rgb(168, 168, 168);
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+  opacity: 0.9;
+  color: rgb(17, 61, 143);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.container {
+  width: 50%;
+  min-width: 300px;
+  display: grid;
+  grid-template: repeat (4, auto) / 50%;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.field {
+  width: 100px;
+  padding: 4px;
+  margin: 4px;
+  border: 2px solid black;
+}
+
+.address {
+  width: 150px;
+}
+
+.button{
+  color: black;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: rgb(176, 141, 87);
+  width: 100px;
+  height: 29px;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.contacts-p{
+  max-height: 100px;
+  max-width: 250px;
+}
+
+p {
+  text-align: center;
+  margin: auto;
+  overflow: auto;
+  font-size: 20px;
+  color: black;
+}
+
+#search-results {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(17, 61, 143);
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 70%;
+  margin: auto;
+}
+
+footer p{
+  font-size: 15px;
+  background: rgb(168, 168, 168);
+  text-decoration: underline;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
+  padding: 3px 0px;
+  margin: 30px auto;
+}
+
+em {
+  color: white;
+  background-color: orange;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1px 1px;
+}
+
+div {
+  justify-content: center;
+  
+}
+
+// use media queries to adjust the size of the container in smaller devices
+@media only screen and (max-width: 500px) {
+  
+  .container {
+    width: 30%;
+    min-width: 250px;
+    }
+  
+}
