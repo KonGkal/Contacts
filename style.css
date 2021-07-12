@@ -82,22 +82,9 @@ footer {
 
 footer p{
   font-size: 15px;
-  background: rgb(168, 168, 168);
   text-decoration: underline;
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  overflow: hidden;
   padding: 3px 0px;
   margin: 30px auto;
-}
-
-em {
-  color: white;
-  background-color: orange;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 1px 1px;
 }
 
 div {
@@ -105,7 +92,6 @@ div {
   
 }
 
-// use media queries to adjust the size of the container in smaller devices
 @media only screen and (max-width: 500px) {
   
   .container {
