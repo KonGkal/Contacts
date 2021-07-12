@@ -29,6 +29,7 @@ I used getters to get the values of the object keys.
 \
   Using VS Code install the `Live Server` extension.
   Once this is done right click on the `index.html` file and select
+  \
   `Open with Live Server`
 
 
