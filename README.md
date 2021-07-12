@@ -25,7 +25,7 @@ I used getters to get the values of the object keys.
 \
   Navigate into the `cd Contacts` and run `npm install`
 
-## 4. Start the app
+## 3. Start the app
 \
   Using VS Code install the `Live Server` extension.
   Once this is done right click on the `index.html` file and select
